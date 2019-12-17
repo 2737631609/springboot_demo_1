@@ -4,6 +4,7 @@ public class User {
     private int id;
     private String userName;
     private String password;
+    private int github_test;
 
     public int getId() {
         return id;
@@ -19,6 +20,14 @@ public class User {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public int getGithub_test() {
+        return github_test;
+    }
+
+    public void setGithub_test(int github_test) {
+        this.github_test = github_test;
     }
 
     public String getPassword() {
