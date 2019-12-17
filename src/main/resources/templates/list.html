@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/js/main.js}"></script>
+</head>
+<body>
+    <p th:text="'字符串信息:'+${str}"/>
+    <table>
+        <tr><td>No.</td><td>姓名</td><td>密码</td></tr>
+        <tr th:each="user,memberStat:${list}">
+            <td th:text="${user.id}"/>
+            <td th:text="${user.userName}"/>
+            <td th:text="${user.password}"/>
+        </tr>
+    </table>
+    <form th:action="@{/login.html}" method="get">
+        <input name="uname" id="uname">
+        <input type="submit">
+    </form>
+</body>
+</html>

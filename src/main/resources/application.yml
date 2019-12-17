@@ -1,0 +1,19 @@
+server:
+  port: 8085
+my:
+  name: wangwu
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/smbms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    password: bdqn
+    username: root
+  mvc:
+    view:
+      prefix:
+
+mybatis:
+  type-aliases-package: com.bdqn.accp3.springboot_demo.pojo
+  mapper-locations: classpath:/static/mapper/**.xml
+
+
